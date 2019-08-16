@@ -49,7 +49,7 @@ function AttendancePage(props) {
         <Grid container direction={ 'column' } justify={ 'center' } alignContent={ 'center' } alignItems={ 'center' } spacing={ 8 }>
             <Grid container direction={ 'row' } justify={ 'center' } alignItems={ 'center' } alignContent={ 'center' } spacing={ 0 } className={ classes.root }>
                 <Grid item xs>
-                    <Typography id='input-slider' component={ 'h2' } gutterBottom>
+                    <Typography id='input-slider' component={ 'h2' } style={ { fontSize : '1rem', color : props.theme.palette.grey['800'], fontFamily : 'inherit', fontStyle : 'bold' } } gutterBottom>
                         Minimum Attendance Percentage
                     </Typography>
                     <Grid container direction={ 'row' } spacing={ 4 } alignContent={ 'center' } justify={ 'center' }>
@@ -84,7 +84,7 @@ function AttendancePage(props) {
                 // Perform a check to only render the StudentTable if there are students matching the attendance value
                 filteredStudents.length > 0
                 ? <StudentTable students={ filteredStudents } />
-                : <Grid container direction={ 'column' } alignContent={ 'center' } justify={ 'center' } color={ 'danger' } style={{height: '100%', margin: '3rem'}}>
+                : <Grid container direction={ 'column' } alignContent={ 'center' } justify={ 'center' } color={ 'danger' } style={ { height : '100%', margin : '3rem' } }>
                     <Grid item xs={ 8 }>
                         <Typography variant={ 'h4' } component={ 'h4' } gutterBottom style={ { color : props.theme.palette.secondary.light } }>
                             No results found...

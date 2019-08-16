@@ -10,14 +10,14 @@ import logo from '../assets/images/nvps-logo.png';
  */
 function NavBar(props) {
     return (
-        <AppBar position='static' style={ { backgroundColor : props.theme.palette.primary.dark, marginBottom: '1.5rem' } }>
+        <AppBar position='static' style={ { backgroundColor : props.theme.palette.primary.dark, marginBottom : '1.5rem' } }>
             <Toolbar>
-                {/* The New Visions logo acts as a link to the home page */}
+                {/* The New Visions logo acts as a link to the home page */ }
                 <Link href={ '/' } style={ { marginLeft : '0', marginRight : 'auto' } }>
                     <img src={ logo } className={ 'navbar-logo' } alt={ 'New Visions for Public Schools' } />
                 </Link>
                 <Grid container spacing={ 6 } justify={ 'flex-end' } alignContent={ 'flex-end' } alignItems={ 'flex-end' } className={ 'navbar-links' } style={ { marginRight : '2rem' } }>
-                    {/* Nav Buttons */}
+                    {/* Nav Buttons */ }
                     <Grid item xs={ 2 }>
                         <Button variant={ 'outlined' } href={ '/' } color='inherit'>
                             <Typography component={ 'h4' }>
@@ -38,4 +38,4 @@ function NavBar(props) {
     );
 }
 
-export default withTheme(NavBar)
+export default withTheme(NavBar);

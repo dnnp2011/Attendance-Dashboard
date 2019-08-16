@@ -10,7 +10,7 @@ import StudentTable from '../components/StudentTable';
 function RosterPage() {
     return (
         <Grid container direction={ 'row' } alignContent={ 'center' } justify={ 'center' } alignItems={ 'center' }>
-            <StudentTable students={students} />
+            <StudentTable students={ students } />
         </Grid>
     );
 }

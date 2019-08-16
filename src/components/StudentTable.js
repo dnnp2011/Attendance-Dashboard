@@ -202,7 +202,7 @@ function StudentTable(props) {
                         </TableBody>
                         <TableFooter style={ { margin : '1.5rem', overflow : 'hidden', borderBottom : 'hidden' } }>
                             <TableRow style={ { overflow : 'hidden' } }>
-                                {/* This TablePagination component is part of the Material-UI/Core package. It greatly eases the process of adding advanced features like this. */}
+                                {/* This TablePagination component is part of the Material-UI/Core package. It greatly eases the process of adding advanced features like this. */ }
                                 <TablePagination
                                     style={ { maxWidth : '100%' } }
                                     rowsPerPageOptions={ [5, 10, 15] }
