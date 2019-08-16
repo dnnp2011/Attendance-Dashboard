@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+  display: grid;
+}
+
+.navbar-links {
+  margin-right: 2rem;
+}
+
+.navbar-logo {
+  max-width: 50%;
+  max-height: 50%;
+  margin: 0 auto 0 0;
+}
